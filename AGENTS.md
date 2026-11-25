@@ -2,7 +2,7 @@
 
 ## Context
 
-WashTrack is CraftLayer's vertical SaaS for laundries, dry cleaners, laundromats, press shops and shoe/bag care studios in India. It is built on the shared CraftLayer core (see [core/README.md](../core/README.md)). The wedge is a QR tag on every item at intake, with photos, plus automatic WhatsApp status updates. Pickup and delivery routing, monthly plans, dispute handling and CRM follow.
+WashTrack is CraftLayer's vertical SaaS for laundries, dry cleaners, laundromats, press shops and shoe/bag care studios in India. It is built on the shared CraftLayer core (see [core/README.md](https://github.com/craftLayer-studio/craftlayer-core/blob/main/README.md)). The wedge is a QR tag on every item at intake, with photos, plus automatic WhatsApp status updates. Pickup and delivery routing, monthly plans, dispute handling and CRM follow.
 
 Goal: fast revenue from owners who already feel the pain of lost garments, "is it ready?" calls and damage disputes. Every feature names the metric it moves.
 
@@ -51,6 +51,6 @@ Goal: fast revenue from owners who already feel the pain of lost garments, "is i
 
 ## Rules for agents editing these docs
 
-- Follow [CONVENTIONS.md](../CONVENTIONS.md): sources with access dates or **(estimate)** labels.
+- Follow [CONVENTIONS.md](https://github.com/craftLayer-studio/craftlayer-products/blob/main/CONVENTIONS.md): sources with access dates or **(estimate)** labels.
 - Reference core modules; do not re-specify them.
 - Keep prices consistent across README, 05 and 06.
