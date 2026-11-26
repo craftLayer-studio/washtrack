@@ -1,0 +1,23 @@
+@import '@astryxdesign/core/reset.css';
+@import '@astryxdesign/core/astryx.css';
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  overflow-x: hidden;
+  background: var(--color-background-body);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-body);
+}
+
+/* QR images and intake photos: sized with tokens, never fixed px. */
+.wt-qr-sm { inline-size: calc(var(--spacing-12) * 2); block-size: auto; display: block; flex-shrink: 0; }
+.wt-qr { inline-size: calc(var(--spacing-12) * 3); block-size: auto; display: block; }
+.wt-qr-lg { inline-size: calc(var(--spacing-12) * 5); block-size: auto; display: block; }
+
+/* Print sheets (garment tags, shop QR). */
+.wt-tag { break-inside: avoid; border: thin dashed var(--color-border-emphasized, currentColor); border-radius: var(--radius-element); }
+@media print {
+  .wt-no-print { display: none !important; }
+  body { background: white; }
+}
