@@ -1,0 +1,47 @@
+{
+  "name": "washtrack",
+  "version": "0.1.0",
+  "private": true,
+  "description": "QR garment tags, intake photos, WhatsApp status updates and UPI payments for Indian laundries and dry cleaners. MVP.",
+  "scripts": {
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
+    "start": "next start",
+    "lint": "eslint",
+    "typecheck": "next typegen && tsc --noEmit",
+    "test": "vitest run",
+    "db:generate": "drizzle-kit generate",
+    "db:seed": "tsx src/server/db/seed-cli.ts"
+  },
+  "packageManager": "pnpm@11.28.6",
+  "engines": {
+    "node": ">=20.9"
+  },
+  "dependencies": {
+    "@astryxdesign/core": "0.7.17",
+    "@astryxdesign/theme-butter": "0.7.17",
+    "@electric-sql/pglite": "0.6.0",
+    "@heroicons/react": "2.2.0",
+    "@stylexjs/stylex": "0.19.1",
+    "drizzle-orm": "0.45.4",
+    "next": "16.4.6",
+    "pg": "8.23.1",
+    "qrcode": "1.5.4",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@astryxdesign/cli": "0.7.17",
+    "@types/node": "20.19.25",
+    "@types/pg": "8.23.1",
+    "@types/qrcode": "1.5.6",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "drizzle-kit": "0.31.11",
+    "eslint": "9.39.1",
+    "eslint-config-next": "16.4.6",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "vitest": "5.1.0"
+  }
+}

@@ -1,0 +1,7 @@
+allowBuilds:
+  sharp: false
+  unrs-resolver: false
+  esbuild: false
+  "@astryxdesign/cli": false
+  "@astryxdesign/core": false
+verifyDepsBeforeRun: false
