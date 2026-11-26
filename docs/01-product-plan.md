@@ -38,19 +38,21 @@ Every neighbourhood laundry runs like a branded chain: no lost garments, no "is 
 
 ### Phase 1: MVP, sellable in 6–8 weeks (P0)
 
+Build status (2026-11-26): the MVP in this repo covers the rows marked **Built**. Messaging and payments use simulated adapters; see the README.
+
 | Feature | Detail | Metric | Core module |
 |---|---|---|---|
-| Onboarding wizard + price list templates | Prefilled list of ~80 common items and services; owner edits prices | Activation | Onboarding wizard |
-| Customer lookup by phone | History, dues, preferences (starch, fold vs hanger) | Activation | CRM |
-| Intake with QR tag per item | Bluetooth thermal printer label or pre-printed tag scan | Retention | QR engine |
-| Intake photos | Per item, stored with timestamp; compressed | Retention (dispute defence) | Storage |
-| Billing | Per piece, per kg, express surcharge, discounts, GST invoice if registered | Activation | Payments |
-| WhatsApp updates | Received (with bill + photo link), ready; optional in-process/out-for-delivery | Retention | Messaging |
-| Scan-to-update status | Stages configurable; order roll-up | Retention | Staff app |
-| Payments | UPI link, cash, card; dues ledger | Revenue for owner | Payments |
-| Handover check | Scan every tag at handover; warns on missing item | Retention | Staff app |
-| Dashboard | Today's intake, ready-not-collected, dues, revenue | Retention | Analytics |
-| Consent log | Purpose-wise consent, STOP opt-out | Compliance | CRM |
+| Onboarding wizard + price list templates — **Built (seeded price list + owner editing; no wizard yet)** | Prefilled list of ~80 common items and services; owner edits prices | Activation | Onboarding wizard |
+| Customer lookup by phone — **Built** | History, dues, preferences (starch, fold vs hanger) | Activation | CRM |
+| Intake with QR tag per item — **Built (printable tag sheet)** | Bluetooth thermal printer label or pre-printed tag scan | Retention | QR engine |
+| Intake photos — **Built** | Per item, stored with timestamp; compressed | Retention (dispute defence) | Storage |
+| Billing — **Built (no GST invoice yet)** | Per piece, per kg, express surcharge, discounts, GST invoice if registered | Activation | Payments |
+| WhatsApp updates — **Built (simulated outbox)** | Received (with bill + photo link), ready; optional in-process/out-for-delivery | Retention | Messaging |
+| Scan-to-update status — **Built (fixed stages)** | Stages configurable; order roll-up | Retention | Staff app |
+| Payments — **Built (UPI intent link, cash, card, dues)** | UPI link, cash, card; dues ledger | Revenue for owner | Payments |
+| Handover check — **Partly built** | Scan every tag at handover; warns on missing item | Retention | Staff app |
+| Dashboard — **Built** | Today's intake, ready-not-collected, dues, revenue | Retention | Analytics |
+| Consent log — **Built** | Purpose-wise consent, STOP opt-out | Compliance | CRM |
 
 **MVP build estimate:** 2 engineers + 1 designer, 6–8 weeks, reusing core QR, CRM, messaging, payments and staff app (estimate).
 
@@ -58,10 +60,10 @@ Every neighbourhood laundry runs like a branded chain: no lost garments, no "is 
 
 | Feature | Metric |
 |---|---|
-| Pickup and delivery: booking via WhatsApp or QR booking page, time slots, rider app, area-sorted route list, collect amount | ARPU (Growth) |
-| Monthly plans: kg or piece bundles, prepaid wallet, auto-deduct, renewal reminders | ARPU for owner, retention |
+| Pickup and delivery: booking via WhatsApp or QR booking page, time slots, rider app, area-sorted route list, collect amount — **Built in MVP (QR booking, slots, route list, collect amount)** | ARPU (Growth) |
+| Monthly plans: kg or piece bundles, prepaid wallet, auto-deduct, renewal reminders — **Built in MVP (bundles + auto-deduct)** | ARPU for owner, retention |
 | Dispute module: claim form, evidence view, policy cap, resolution log, export for consumer forum reply | Retention |
-| Campaigns: win-back, festival (Diwali, wedding season), refer-a-friend credit | Retention, referral |
+| Campaigns: win-back, festival (Diwali, wedding season), refer-a-friend credit — **Win-back and plan offers built in MVP** | Retention, referral |
 | Google review request after delivery | Acquisition for owner |
 | Shoe and bag care: before/after photo pairs, shareable result card | Referral |
 | Regional language UI | Acquisition |
@@ -73,7 +75,7 @@ Every neighbourhood laundry runs like a branded chain: no lost garments, no "is 
 | Plant mode: multiple counters, store-to-workshop challans, batch scanning, partial delivery | ARPU (Plant) |
 | Corporate, hotel, hostel/PG accounts with monthly invoices (link with StayBell / NestKeep) | ARPU |
 | Staff productivity and attendance | Retention |
-| Customer self-serve status page by QR on receipt | Retention |
+| Customer self-serve status page by QR on receipt — **Built in MVP** | Retention |
 | Inventory of consumables (solvent, hangers, covers) | Retention |
 | Franchise reports for small 3–10 store brands | ARPU |
 

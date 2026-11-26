@@ -22,6 +22,6 @@ Using it commercially without a licence infringes CraftLayer Studio's copyright.
 
 ## How to get a licence
 
-Open an issue in this repository titled **"Commercial licence request"** (do not include confidential details in it), or contact CraftLayer Studio through <https://craftlayer-studio.github.io>. Tell us who you are, which product you want to use, and how you plan to use it. Licences are available per product, per business or as an enterprise or white-label agreement.
+Open an issue in this repository titled **"Commercial licence request"** (do not include confidential details in it), or contact CraftLayer Studio through <https://craftlayer.store> (licensing@craftlayer.store). Tell us who you are, which product you want to use, and how you plan to use it. Licences are available per product, per business or as an enterprise or white-label agreement.
 
 Copyright (c) 2026 CraftLayer Studio. All rights not expressly granted are reserved.
